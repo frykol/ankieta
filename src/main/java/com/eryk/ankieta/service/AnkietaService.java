@@ -34,6 +34,7 @@ public class AnkietaService {
         return ankietaRepo.save(ankieta);
     }
 
+
     @Transactional
     public void deleteAnkieta(Long id){
         ankietaRepo.deleteAnkietaById(id);

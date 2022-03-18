@@ -1,1 +1,6 @@
-<p *ngFor="let ankieta of ankiety">{{ankieta.questionName}}</p>
+<div *ngFor="let ankieta of ankiety">
+  <h1>{{ankieta.questionName}}</h1>
+  <p>{{ankieta.apoints}}</p>
+  <button (click)="updateAnkieta(ankieta)">Dodaj</button>
+</div>
+

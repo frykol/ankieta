@@ -25,10 +25,11 @@ export class AnkietaService {
   }
 
   public updateAnkieta(ankieta: Ankieta): Observable<Ankieta>{
-    return this.http.put<Ankieta>(`${this.ApiUrl}/ankieta/add`, ankieta);
+    return this.http.put<Ankieta>(`${this.ApiUrl}/ankieta/update`, ankieta);
   }
 
   public deleteAnkieta(ankietaId: number): Observable<void>{
     return this.http.delete<void>(`${this.ApiUrl}/ankieta/del/${ankietaId}`);
   }
+
 }
