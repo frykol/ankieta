@@ -10,6 +10,7 @@ import { AnkietadivComponent } from './ankietadiv/ankietadiv.component';
 import { AllankietyComponent } from './allankiety/allankiety.component';
 import { AddankietaComponent } from './addankieta/addankieta.component';
 import { FormsModule } from '@angular/forms';
+import { PojankietaComponent } from './pojankieta/pojankieta.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     AnkietadivComponent,
     AllankietyComponent,
-    AddankietaComponent
+    AddankietaComponent,
+    PojankietaComponent
   ],
   imports: [
     BrowserModule,
