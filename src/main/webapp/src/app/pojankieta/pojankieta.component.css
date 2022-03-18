@@ -1,0 +1,58 @@
+form{
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: rgb(73, 86, 255);
+}
+#halfContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#half{
+    text-align: center;
+    width: 40%;
+    
+}
+
+#half p{
+    margin: 10px;
+    font-size: 30px;
+}
+
+#half div{
+    margin: 20px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input{
+    height: 15px;
+    margin: 0px 10px;
+    transform: scale(1.3);
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+
+button{
+    width: 40%;
+    height: 40px;
+    margin: 10px 30%;
+    background-color: white;
+    border: 1px solid rgb(73, 86, 255);
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: rgb(73, 86, 255);
+    cursor: pointer;
+    color: white;
+}

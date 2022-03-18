@@ -1,3 +1,26 @@
-<div>
-    
-</div>
+<form #voteForm="ngForm" (ngSubmit)="getForm(voteForm)">
+    <h1>{{ankieta.questionName}}</h1>
+    <div id="halfContainer">
+        <div id="half">
+            <div>
+                <p><input type="radio" ngModel name="odp" value="a">{{ankieta.a}}</p>
+                <h4>Punkty: {{ankieta.apoints}}</h4>
+            </div>
+            <div>
+                <p><input type="radio" ngModel name="odp" value="b">{{ankieta.b}}</p>
+                <h4>Punkty: {{ankieta.bpoints}}</h4>
+            </div>
+        </div>
+        <div id="half">
+            <div>
+                <p><input type="radio" ngModel name="odp" value="c">{{ankieta.c}}</p>
+                <h4>Punkty: {{ankieta.cpoints}}</h4>
+            </div>
+            <div>
+                <p><input type="radio" ngModel name="odp" value="d">{{ankieta.d}}</p>
+                <h4>Punkty: {{ankieta.dpoints}}</h4>
+            </div>
+        </div>
+    </div>
+    <button type="submit">Zagłosuj</button>
+</form>

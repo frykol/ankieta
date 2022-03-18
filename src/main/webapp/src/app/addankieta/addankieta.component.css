@@ -7,6 +7,10 @@ form{
     text-align: center;
 }
 
+#qName h1{
+    color: rgb(73, 86, 255);;
+}
+
 input{
     border: none;
     border: 1px solid white;
