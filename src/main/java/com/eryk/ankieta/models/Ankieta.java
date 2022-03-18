@@ -16,22 +16,22 @@ public class Ankieta implements Serializable {
     @Column(nullable = false, updatable = false)
     private Long id;
     private String questionName;
-    private String aAnswer;
-    private String bAnswer;
-    private String cAnswer;
-    private String dAnswer;
-    private String correctAnswer;
+    private String A;
+    private String B;
+    private String C;
+    private String D;
+    private String correctOption;
     private String difficulty;
 
     public Ankieta() {}
 
-    public Ankieta(String questionName, String aAnswer, String bAnswer, String cAnswer, String dAnswer, String correctAnswer, String difficulty){
+    public Ankieta(String questionName, String A, String B, String C, String D, String correctOption, String difficulty){
         this.questionName = questionName;
-        this.aAnswer = aAnswer;
-        this.bAnswer = bAnswer;
-        this.cAnswer = cAnswer;
-        this.dAnswer = dAnswer;
-        this.correctAnswer = correctAnswer;
+        this.A = A;
+        this.B = B;
+        this.C = C;
+        this.D = D;
+        this.correctOption = correctOption;
         this.difficulty = difficulty;
     }
 
