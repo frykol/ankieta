@@ -5,6 +5,8 @@ export interface Ankieta{
     b: string;
     c: string;
     d: string;
-    correctOption: string;
-    difficulty: string;
+    apoints: number;
+    bpoints: number;
+    cpoints: number;
+    dpoints: number;
 }
