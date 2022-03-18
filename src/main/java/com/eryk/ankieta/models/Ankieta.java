@@ -20,24 +20,24 @@ public class Ankieta implements Serializable {
     private String B;
     private String C;
     private String D;
-    private Number aPoints = 0;
-    private Number bPoints = 0;
-    private Number cPoints = 0;
-    private Number dPoints = 0;
+    private int aPoints = 0;
+    private int bPoints = 0;
+    private int cPoints = 0;
+    private int dPoints = 0;
 
 
     public Ankieta() {}
 
-    public Ankieta(String questionName, String A, String B, String C, String D){
+    public Ankieta(String questionName, String A, String B, String C, String D,int aPoints, int bPoints,int cPoints,int dPoints){
         this.questionName = questionName;
         this.A = A;
         this.B = B;
         this.C = C;
         this.D = D;
-        this.aPoints = 0;
-        this.bPoints = 0;
-        this.cPoints = 0;
-        this.dPoints = 0;
+        this.aPoints = aPoints;
+        this.bPoints = bPoints;
+        this.cPoints = cPoints;
+        this.dPoints = dPoints;
     }
 
 }

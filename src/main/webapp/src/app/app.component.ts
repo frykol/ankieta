@@ -8,30 +8,7 @@ import { AnkietaService } from './ankieta.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  public ankiety: Ankieta[] = [];
-
-  constructor(private ankietaService: AnkietaService) {}
-
-  ngOnInit(){
-    this.getAnkiety();
-  }
-
-  getAnkiety(): void{
-    this.ankietaService.getAllAnkieta().subscribe(
-      (response: Ankieta[]) => {this.ankiety = response;},
-      (error: HttpErrorResponse) => {alert(error.message);}
-    )
-
-  }
-
-  updateAnkieta(ankieta: Ankieta): void{
-    ankieta.apoints +=1;
-    this.ankietaService.updateAnkieta(ankieta).subscribe(
-      (response: Ankieta) => {console.log("es"); this.getAnkiety()},
-      (error: HttpErrorResponse) => {alert(error.message);}
-    )
-  }
-
+export class AppComponent{
+  
   title = 'webapp';
 }

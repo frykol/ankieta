@@ -6,11 +6,17 @@ import { AnkietaService } from './ankieta.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AnkietadivComponent } from './ankietadiv/ankietadiv.component';
+import { AllankietyComponent } from './allankiety/allankiety.component';
+import { AddankietaComponent } from './addankieta/addankieta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AnkietadivComponent,
+    AllankietyComponent,
+    AddankietaComponent
   ],
   imports: [
     BrowserModule,
