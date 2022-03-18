@@ -55,13 +55,12 @@ input:focus{
 
 button{
     width: 40%;
-    height: 30px;
+    height: 40px;
     margin: 10px 30%;
     border: 1px solid rgb(73, 86, 255);
     background-color: white;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     transition: 0.2s;
 }
 
@@ -69,4 +68,12 @@ button:hover{
     background-color: rgb(73, 86, 255);
     color: white;
     
+}
+
+#back{
+    border: 1px solid red;
+}
+
+#back:hover{
+    background-color: red;
 }

@@ -18,8 +18,15 @@ export class AnkietadivComponent implements OnInit {
 
   deleteAnkieta(): void{
     this.ankietaService.deleteAnkieta(this.ankieta.id).subscribe(
-      (response: void) => {console.log(response); this.router.navigate(['/add']);}
+      (response: void) => {console.log(response); this.reload();}
     )
+  }
+
+  reload(){
+    let currentUrl = this.router.url;
+      this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+      this.router.onSameUrlNavigation = 'reload';
+      this.router.navigate([currentUrl]);
   }
 
 }
