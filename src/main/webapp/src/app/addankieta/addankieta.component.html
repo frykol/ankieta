@@ -1,7 +1,7 @@
-<form #addForm="ngForm">
+<form #addForm="ngForm"  (ngSubmit)="addAnkieta(addForm)">
     <div id="qName">
         <h1>Nazwa Ankiety:</h1>
-        <input type="text" name="questionName" required>
+        <input type="text" ngModel name="questionName" required>
     </div>
     <div id="halfContainer">
         <div id="half">
@@ -25,5 +25,5 @@
             </div>
         </div>
     </div>
-    <button type="submit" (ngSubmit)="addAnkieta(addForm)">Dodaj</button>
+    <button type="submit">Dodaj</button>
 </form>
