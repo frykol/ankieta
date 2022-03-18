@@ -1,4 +1,4 @@
-<form>
+<form #addForm="ngForm">
     <div id="qName">
         <h1>Nazwa Ankiety:</h1>
         <input type="text" name="questionName" required>
@@ -7,23 +7,23 @@
         <div id="half">
             <div>
                 <p>Pytanie A</p>
-                <input type="text" name="a" required>
+                <input type="text" ngModel name="a" required>
             </div>
             <div>
                 <p>Pytanie B</p>
-                <input type="text" name="b" required>
+                <input type="text" ngModel name="b" required>
             </div>
         </div>
         <div id="half">
             <div>
                 <p>Pytanie C</p>
-                <input type="text" name="c" required>
+                <input type="text" ngModel name="c" required>
             </div>
             <div>
                 <p>Pytanie D</p>
-                <input type="text" name="d" required>
+                <input type="text" ngModel name="d" required>
             </div>
         </div>
     </div>
-    <button type="submit">Dodaj</button>
+    <button type="submit" (ngSubmit)="addAnkieta(addForm)">Dodaj</button>
 </form>

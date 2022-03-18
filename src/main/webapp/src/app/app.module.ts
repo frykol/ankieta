@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AnkietadivComponent } from './ankietadiv/ankietadiv.component';
 import { AllankietyComponent } from './allankiety/allankiety.component';
 import { AddankietaComponent } from './addankieta/addankieta.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AddankietaComponent } from './addankieta/addankieta.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [AnkietaService],
   bootstrap: [AppComponent]
