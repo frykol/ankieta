@@ -9,8 +9,7 @@ import { AnkietaService } from '../ankieta.service';
 })
 export class AnkietadivComponent implements OnInit {
 
-  @Input() qName: String = "";
-  @Input() id: number = 0;
+  @Input() ankieta: any = {};
 
   constructor(private ankietaService: AnkietaService, private router: Router) { }
 
@@ -18,7 +17,7 @@ export class AnkietadivComponent implements OnInit {
   }
 
   deleteAnkieta(): void{
-    this.ankietaService.deleteAnkieta(this.id).subscribe(
+    this.ankietaService.deleteAnkieta(this.ankieta.id).subscribe(
       (response: void) => {console.log(response); this.router.navigate(['/add']);}
     )
   }

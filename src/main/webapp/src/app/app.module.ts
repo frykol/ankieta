@@ -11,6 +11,7 @@ import { AllankietyComponent } from './allankiety/allankiety.component';
 import { AddankietaComponent } from './addankieta/addankieta.component';
 import { FormsModule } from '@angular/forms';
 import { PojankietaComponent } from './pojankieta/pojankieta.component';
+import { EditankietaComponent } from './editankieta/editankieta.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PojankietaComponent } from './pojankieta/pojankieta.component';
     AnkietadivComponent,
     AllankietyComponent,
     AddankietaComponent,
-    PojankietaComponent
+    PojankietaComponent,
+    EditankietaComponent
   ],
   imports: [
     BrowserModule,

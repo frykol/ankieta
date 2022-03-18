@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddankietaComponent } from './addankieta/addankieta.component';
 import { AllankietyComponent } from './allankiety/allankiety.component';
+import { EditankietaComponent } from './editankieta/editankieta.component';
 import { PojankietaComponent } from './pojankieta/pojankieta.component';
 
 const routes: Routes = [
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: "ank/:id",
     component: PojankietaComponent
+  },
+  {
+    path: "edit/:id",
+    component: EditankietaComponent
   }
 ];
 

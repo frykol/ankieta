@@ -1,8 +1,9 @@
 <div id="container">
-    <p>{{qName}}</p>
+    <p>{{ankieta.questionName}}</p>
     <div id="btns">
-        <button id="go" routerLink="/ank/{{id}}">Przejdź</button>
+        <button id="go" routerLink="/ank/{{ankieta.id}}">Przejdź</button>
         <button id="del" (click)="deleteAnkieta()">Usuń</button>
+        <button id="edit" routerLink="/edit/{{ankieta.id}}">Edytuj</button>
     </div>
 </div>
 

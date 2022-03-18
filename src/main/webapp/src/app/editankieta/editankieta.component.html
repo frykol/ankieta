@@ -1,0 +1,29 @@
+<form #editForm="ngForm">
+    <div id="qName">
+        <h1>Nazwa Ankiety:</h1>
+        <input type="text" ngModel="{{ankieta?.questionName}}" name="questionName" required >
+    </div>
+    <div id="halfContainer">
+        <div id="half">
+            <div>
+                <p>Pytanie A</p>
+                <input type="text" ngModel="{{ankieta?.a}}" name="a" required>
+            </div>
+            <div>
+                <p>Pytanie B</p>
+                <input type="text" ngModel="{{ankieta?.b}}" name="b" required >
+            </div>
+        </div>
+        <div id="half">
+            <div>
+                <p>Pytanie C</p>
+                <input type="text" ngModel="{{ankieta?.c}}" name="c" required >
+            </div>
+            <div>
+                <p>Pytanie D</p>
+                <input type="text" ngModel="{{ankieta?.d}}" name="d" required>
+            </div>
+        </div>
+    </div>
+    <button type="submit" (click)="editAnkieta(editForm.value)">Edytuj</button>
+</form>
